@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Black', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+h3, p {
+  font-family: 'Archivo', sans-serif;
+}
+
+.ut {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+
+.background {
+    background-image: url(/images/power_mathilde_BW-min.png);
+    height: 100vh;
+    background-size: contain;
+    min-height: 800px;
+    background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.background h1 {
+    display: flex;
+    align-items: end;
+    padding-top: 17rem;
+}
+
+.logo {
+    width: 100px;
+    margin: 1.5rem;
+  }
+
+  .logo-link {
+    position: fixed;
+  }
+
+.headline {
+    font-size: 10rem;
+    color: #bedc93;
+    text-align: center;
+}
+
+.kaospilot-background {
+    background-image: url(/images/kaospilot_logo-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #bedc93;
+    height: 60vh;
+}
+
+
+
+.overskrift {
+-webkit-text-stroke: 0.1px #000000;
+-webkit-text-fill-color: transparent;
+font-size: 4rem;
+padding-left: 10rem;
+padding-top: 3rem;
+}
+
+.line {
+    height: .5rem;
+    width: 30rem;
+    color: #bedc93;
+    background-color: #bedc93;
+    margin-left: 6rem;
+}
+
+.stor-tekst {
+    font-size: 5rem;
+    text-align: center;
+    height: 50vh;
+    overflow-y: scroll;
+    margin: 4rem 3rem;
+}
+
+.stor-tekst p {
+    padding: 1rem 2rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+.under-overskrift {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+
+.water {
+    background-image: url(/images/watermathilde.jpg);
+    min-height: 800px;
+    background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.flex-text {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-text p {
+    padding: 3rem;
+    line-height: 1.5rem;
+}
+
+
+/* Banner */ 
+
+.banner-div {
+    margin-top: 5rem;
+    height: 5rem;
+    background-color: #bedc93;
+    margin-bottom: 3rem;
+  }
+  
+  .banner h4 {
+    position: absolute;
+    font-size: 3rem;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  
+  .math {
+    animation-name: rightToLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: .1px rgb(240, 244, 232);
+  -webkit-text-fill-color: transparent;
+    margin: .7rem;
+    margin-left: 8rem;
+  }
+
+  /*
+  
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(1000px);
+    }
+  
+    100% {
+      transform: translateX(-1000px);
+    }
+  }
+
+  */
+
+  .space {
+    padding-top: 2rem;
+  }
+
+  
+  .sig-lund {
+    text-align: center;
+    font-size: 4rem;
+    padding: 3rem 5rem;
+    font-family: 'Archivo Black', sans-serif;
+  }
+
+  .sig-lund h3:hover {
+    color: #443f43;
+  }
+
+  .laugh {
+    width: 400px;
+  }
+
+  .text-section {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+
+  .fill-text {
+    font-size: 1.2rem;
+    padding: 2rem 0rem 1rem 4rem;
+    line-height: 1.5rem;
+  }
+
+
+  .container {
+    background-color: #bedc93;
+  }
+
+  .hand {
+    width:200px;
+    margin: 2rem 5rem 0rem 0rem;
+  }
+
+  .citat {
+    background-color: #bedc93;
+  }
+
+  .citat h4 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+
+  .second {
+    margin-left: 13rem;
+  }
+
+  .third {
+    margin-left: 10rem;
+  }
+
+  .fourth {
+    margin-left: 16rem;
+  }
+
+  .utraditionelle p {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+
+  .utraditionelle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+
+  /* animation text fade in on scroll*/
+.reveal-slow{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal-slow.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.kolonner {
+  display: flex;
+}
+
+.ut {
+  font-size: 3rem;
+  padding-left: 6rem;
+}
+
+
+.image-section {
+  height: 100vh;
+ background-image: url(/images/sytwo-min.JPG);
+  background-repeat: no-repeat, repeat;
+  background-size: 100vh;
+  background-attachment: fixed;
+}
+
+.image-section h4 {
+  height: 58vh;
+  width: 80vh;
+  line-height: 2rem;
+  margin: auto;
+  font-size: 1.3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.text-box {
+  background-color: #bedc93;
+  position: absolute;
+  margin: 9rem 25rem;
+  
+}
+
+
+
+.sew {
+  width: 100vh;
+}
+
+.image-section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bedc93;
+}
+
+.text-box-two h4 {
+  font-size: 1.5rem;
+  padding: 5rem;
+  line-height: 2rem;
+}
+
+
+.flex-text {
+  padding-bottom: 3rem;
+}
+
+.svg {
+font-size: 5rem;
+}
+
+.sig-lund svg:hover {
+  fill: #443f43;
+}
+
+.looking {
+  width: 300px;
+  position: absolute;
+}
+
+.kaos-pilot {
+  padding-top: 4rem;
+}
+
+.mathilde-looking {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#scribble {
+  width: 80vh;
+}
+
+.video-scribble {
+  width: 70vh;
+  height: 70vh;
+}

@@ -1,0 +1,399 @@
+/* Tøjstativ øverst på sitet */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+h4, p {
+    font-family: 'Archivo', sans-serif;
+}
+    
+    header {
+        position: relative; 
+        height: 500px; 
+      }
+      
+      .clothing {
+        width: 100%; 
+        height: 550px;
+      }
+      
+      header h1 {
+        position: absolute; 
+        top: 60%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Centrer overskriften i forhold til dens egen størrelse */
+        color: #bedc93; 
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 10rem; 
+        font-weight: bold; 
+        text-align: center; 
+      }
+    
+      /* video til venstre */
+      .video-left {
+        display: flex;
+        padding-top: 6rem;
+        padding-left: 3rem;
+        padding-bottom: 5rem;
+      }
+      
+      #MS-video {
+        height: 40rem;
+      }
+      
+      .overskrift{
+        font-family:'Archivo Black', sans-serif;
+        text-align: center;
+      }
+    
+      .overskrift h3{
+        font-size: 2.3rem;
+        padding-top: 3rem;
+        line-height: 3.5rem;
+      }
+    
+      .overskrift p{
+        font-size: 1.7rem;
+        line-height: 3rem;
+        padding-top: 2rem;
+      }
+
+    .overskrift h2 {
+    -webkit-text-stroke: 0.1px #000000;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-left: 4.5rem;
+    }
+
+
+      .filler {
+        margin-left: 10rem;
+      }
+
+
+      .filler p {
+        font-size: 1.5rem;
+      }
+
+      .start-siglund {
+        font-family: 'Archivo', sans-serif;
+      }
+    
+      .line{
+        height: .5rem;
+        width: 30rem;
+        color: #bedc93;
+        background-color: #bedc93;
+        margin-left: 6.5rem;
+    }
+
+    .long {
+      width: 53rem;
+      margin-left: 2rem;
+    }
+    
+     /* Grønt tekstil */
+     .cover-container {
+        position: absolute;
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        width: 100%;
+        height: 60%;
+       
+      }
+      
+      .cover-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+       /* tekst*/
+       .drivkraft-section {
+        background-image: url('/images/grøntekstil-min.JPG');
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+      }
+      
+      .drivkraft-tekst{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        top: 200px;
+      }
+    
+
+
+      /* Tøj produktion */
+
+
+  .produktion-boks{
+    border-style: solid;
+    border-width: 4px;
+    width: 600px;
+    height: 350px;
+    margin: 120px;
+    padding: 20px;
+    text-align: center;
+    border-color: #93bd66;
+    position: absolute;
+  }
+
+  .produktion-boks h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 2rem;
+  }
+
+  .produktion-boks p{
+    font-size: 1.3rem;
+  }
+
+  .produktion{
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+  }
+
+  .produktion-video{
+    margin: 30px;
+    margin-top: 220px;
+    margin-left: 700px;
+    border-style: solid;
+    border-color: #93bd66;
+    border-width: 4px;
+    z-index: 99;
+  }
+
+  #tøj-video{
+    height: 350px;
+  }
+
+
+
+
+  
+  /* Slider funktion - før og efter */
+.slider-image {
+    display: block;
+    max-width: 100%;
+}
+
+.flex-swipe {
+  background-color: #bedc93;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.swipe-text {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.text-swipe {
+  width: 50%;
+}
+
+
+.main-swipe {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-size: contain;
+    width: 50%;
+}
+
+.container-swipe {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    --position: 50%;
+}
+
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+    max-width: 800px;
+    max-height: 90vh;
+}
+
+.image-after {
+    max-width: 800px;
+    max-height: 90vh;
+}
+
+
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider:focus-visible ~ .slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: rgb(32, 244, 32);
+    z-index: 10;
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.slider-button {
+    position: absolute;
+    background-color:rgb(32, 244, 32) ;
+    color: white;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    pointer-events: none;
+    box-shadow: 5px 5px 1px hsl(0, 50%, 2%, .5);
+}
+
+
+
+.infographic_container h2 {
+    color: #443f43;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.infographic_container h2 span {
+    color: #83bd56 ;
+}
+
+.infographic_container {
+    
+    padding-top: 5rem;
+    background-color: #dbdbdb;
+    padding-bottom: 7rem;
+}
+
+.infographic_container img {
+    width: 70%;
+}
+
+.infographic {
+    display: flex;
+    justify-content: center;
+}
+
+
+.info {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.info img {
+  padding-top: 3rem;
+}
+
+.stor-tekst {
+  font-size: 5rem;
+  text-align: center;
+  height: 50vh;
+  overflow-y: scroll;
+  margin: 4rem 3rem;
+}
+
+.stor-tekst p {
+  padding: 1rem 2rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.sig-lund {
+  text-align: center;
+  font-size: 4rem;
+  padding: 3rem 5rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.sig-lund h3:hover {
+  color: #443f43;
+}
+
+.svg {
+  font-size: 5rem;
+  }
+  
+  .sig-lund svg:hover {
+    fill: #443f43;
+  }
+
+
+  .logo {
+    width: 100px;
+    margin: 1.5rem;
+  }
+
+  .logo-link {
+    position: fixed;
+  }
+
+    /* animation text fade in on scroll*/
+.reveal-slow{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal-slow.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.toej-tekst {
+  height: 30vh;
+  background-color: #bedc93;
+}
+
+
+
